@@ -38,9 +38,9 @@ class TorNode(NodeMixin):
             self.progress = progress
 
 
+
 def qb_get_folders(path):
     return path.split("/")
-
 
 def get_folders(path):
     fs = re_findall(f"{DOWNLOAD_DIR}[0-9]+/(.+)", path)[0]
